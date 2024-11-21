@@ -11,6 +11,7 @@ sqlalchemy = "*"
 python-dotenv = "*"
 psycopg2 = "*"
 numpy = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 

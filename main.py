@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 import os
 import numpy as np
 
-#pipenv run pip freeze > requirements.txt
 def engine():
     load_dotenv()
     user = 'tasa99'
@@ -40,7 +39,6 @@ def graph_authors(data):
                 list_length = st.slider("Select the number of values to show", 1, 100, 10, key=query_value)
                 st.table(counts.head(list_length))
 
-
 def main():
     st.write('''# My First app
              hello *world!*''')
@@ -52,10 +50,6 @@ def main():
     with textcol:
         texts = import_texts()
         st.write(f'''{len(texts)} texts have been found! Explore the texts below:''')
-
-    
-
-    #st.line_chart(data, y="cnt", x="author_birth_year")
 
 if __name__ == "__main__":
     main()
